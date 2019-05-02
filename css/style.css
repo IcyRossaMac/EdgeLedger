@@ -27,8 +27,25 @@ p {
   color: #93cb52;
 }
 
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .l-heading {
   font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -36,6 +53,18 @@ p {
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 3rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
 }
 
 .btn {
@@ -102,7 +131,29 @@ p {
   padding: 0 2rem;
 
   /* Overlay */
-  top: 0;
+  position: absolute;
+  top: 65px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
